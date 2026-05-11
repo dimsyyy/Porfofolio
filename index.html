@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimas Yuda | Workspace</title>
+    <link rel="icon" href="icons/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="tech-bg"></div>
+
+    <div class="layout-wrapper">
+        
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="avatar-container">
+                    <img src="images/dim.jpeg" alt="Dimas Yuda" class="avatar-img">
+                </div>
+                <div class="profile-info-wrapper">
+                    <h2 class="name">Dimas Yuda P.</h2>
+                    <div class="mobile-socials">
+                        <a href="https://github.com/dimsyyy" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/dimas-yuda-pratama-170806d" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/dimytma.17" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="status-badge"><span class="dot pulse"></span> Dev Mode</div>
+            </div>
+
+            <nav class="nav-menu">
+                <button class="nav-btn active" data-target="home">
+                    <i class="fa-solid fa-house"></i> <span>Home</span>
+                </button>
+                <button class="nav-btn" data-target="about">
+                    <i class="fas fa-user-astronaut"></i> <span>About</span>
+                </button>
+                <button class="nav-btn" data-target="skills">
+                    <i class="fas fa-microchip"></i> <span>Tech Stack</span>
+                </button>
+                <button class="nav-btn" data-target="projects">
+                    <i class="fas fa-folder-open"></i> <span>Projects</span>
+                </button>
+            </nav>
+
+            <div class="social-links">
+                <a href="https://github.com/dimsyyy" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dimas-yuda-pratama-170806d" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/dimytma.17" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </aside>
+
+        <main class="content-wrapper">
+            
+            <section id="home" class="page-section active">
+                <div class="content-inner">
+                    <div class="code-comment stagger-item">// System Initialization Complete</div>
+                    
+                    <div class="mobile-profile stagger-item">
+                        <img src="images/dim.jpeg" alt="Dimas Yuda">
+                    </div>
+
+                    <h1 class="hero-title stagger-item">
+                        Halo, saya Dimas Yuda P.<br>
+                        <span class="text-blue" id="typing-text"></span><span class="cursor-blink">|</span>
+                    </h1>
+                    <p class="hero-desc stagger-item">
+                        Mahasiswa D3 Manajemen Informatika Polsri yang berfokus pada pengembangan perangkat lunak.
+                    </p>
+                    <div class="action-group stagger-item">
+                        <button class="btn-primary" onclick="document.querySelector('[data-target=\'projects\']').click()">
+                            Run Projects() <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="page-section">
+                <div class="content-inner">
+                    <h2 class="section-title stagger-item">sys.get_info("about_me")</h2>
+                    <div class="about-grid">
+                        <div class="about-text stagger-item">
+                            <p>Berasal dari Tanjung Enim dan saat ini menempuh pendidikan di Politeknik Negeri Sriwijaya jurusan Manajemen Informatika. Memiliki ketertarikan dalam dunia pemrograman dan pengembangan teknologi, serta senang mempelajari hal-hal baru yang berkaitan dengan software development dan problem solving.</p>
+                            <button class="btn-primary" onclick="seeCV()">
+                            Curriculum Vitae() <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="stats-container stagger-item">
+                            <div class="stat-box glass-panel 3d-card">
+                                <h3>Education</h3>
+                                <p>SMK Bukit Asam Tanjung Enim</p>
+                                <p class="subp">Rekayasa Perangkat Lunak</p>
+                                <br>
+                                <p>Politeknik Negeri Sriwijaya</p>
+                                <p class="subp">D3 Manajemen Informatika</p>
+                            </div>
+                            <div class="stat-box glass-panel 3d-card">
+                                <h3>Organization</h3>
+                                <p>Himpunan Mahasiswa Jurusan Manajemen Informatika</p>
+                                <p class="subp">Wakil Ketua Himpunan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="page-section">
+                <div class="content-inner">
+                    <h2 class="section-title stagger-item">Skills</h2>
+                    
+                    <div class="skill-category-badge stagger-item">Tech Stack</div>
+                    
+                    <div class="skill-grid-outline stagger-item">
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/html.png" alt="HTML" class="skill-icon-img"> <h3>HTML</h3>
+                            </div>
+                            <span class="skill-level">advanced</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/css.png" alt="CSS" class="skill-icon-img"> <h3>CSS</h3>
+                            </div>
+                            <span class="skill-level">advanced</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/js.webp" alt="JS" class="skill-icon-img"> <h3>JS</h3>
+                            </div>
+                            <span class="skill-level">beginner</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/laravel.svg" alt="Laravel" class="skill-icon-img"> <h3>Laravel</h3>
+                            </div>
+                            <span class="skill-level">intermediate</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/php.webp" alt="PHP" class="skill-icon-img"> <h3>PHP</h3>
+                            </div>
+                            <span class="skill-level">intermediate</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/bootstrap.png" alt="Bootstrap" class="skill-icon-img"> <h3>Bootstrap</h3>
+                            </div>
+                            <span class="skill-level">intermediate</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/python.png" alt="Python" class="skill-icon-img"> <h3>Python</h3>
+                            </div>
+                            <span class="skill-level">beginner</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/mysql.png" alt="MySQL" class="skill-icon-img"> <h3>Mysql</h3>
+                            </div>
+                            <span class="skill-level">advanced</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/java.png" alt="Java" class="skill-icon-img"> <h3>Java</h3>
+                            </div>
+                            <span class="skill-level">intermediate</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/c.png" alt="C" class="skill-icon-img"> <h3>C</h3>
+                            </div>
+                            <span class="skill-level">intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-badge stagger-item" style="margin-top: 35px;">Tools</div>
+                    
+                    <div class="skill-grid-outline stagger-item">
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/word.png" alt="Word" class="skill-icon-img"> <h3>Word</h3>
+                            </div>
+                            <span class="skill-level">advanced</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/excel.png" alt="Excel" class="skill-icon-img"> <h3>Excel</h3>
+                            </div>
+                            <span class="skill-level">beginner</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/ppt.png" alt="PPT" class="skill-icon-img"> <h3>PPT</h3>
+                            </div>
+                            <span class="skill-level">intermediate</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/unity.png" alt="Unity" class="skill-icon-img"> <h3>Unity</h3>
+                            </div>
+                            <span class="skill-level">beginner</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/blender.png" alt="Blender" class="skill-icon-img"> <h3>blender</h3>
+                            </div>
+                            <span class="skill-level">beginner</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/potosop.png" alt="Photoshop" class="skill-icon-img"> <h3>Photoshop</h3>
+                            </div>
+                            <span class="skill-level">intermediate</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/premierepro.png" alt="Premiere Pro" class="skill-icon-img"> <h3>Premiere Pro</h3>
+                            </div>
+                            <span class="skill-level">intermediate</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/construct3.png" alt="Construct" class="skill-icon-img"> <h3>Construct</h3>
+                            </div>
+                            <span class="skill-level">intermediate</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/capcut.png" alt="Capcut" class="skill-icon-img"> <h3>Capcut</h3>
+                            </div>
+                            <span class="skill-level">intermediate</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/robloxstudio.png" alt="Roblox Studio" class="skill-icon-img"> <h3>Roblox Studio</h3>
+                            </div>
+                            <span class="skill-level">intermediate</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/netbeans.png" alt="NetBeans" class="skill-icon-img"> <h3>NetBeans</h3>
+                            </div>
+                            <span class="skill-level">intermediate</span>
+                        </div>
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/oraclesql.svg" alt="Oracle SQL" class="skill-icon-img"> <h3>Oracle SQL</h3>
+                            </div>
+                            <span class="skill-level">intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-badge stagger-item" style="margin-top: 35px;">More</div>
+                     <div class="skill-grid-outline stagger-item">
+                        <div class="skill-card-outline">
+                            <div class="skill-head">
+                                <img src="icons/canon.png" alt="Canon" class="skill-icon-img"> <h3>Canon</h3>
+                            </div>
+                            <span class="skill-level">advanced</span>
+                        </div>
+                     </div>
+                </div>
+            </section>
+
+            <section id="projects" class="page-section">
+                <div class="content-inner">
+                    <h2 class="section-title stagger-item">Execute Projects</h2>
+                    <div class="project-list">
+                        <div class="project-card glass-panel 3d-card stagger-item">
+                            <div class="proj-header">
+                                <i class="fas fa-wallet proj-icon"></i>
+                                <h3>SchediKu App</h3>
+                            </div>
+                            <p>Aplikasi pengelola keuangan, berisi fitur pencatatan pengeluaran dan pemasukan harian dalam satu bulan</p>
+                            <a href="https://schediku.vercel.app" target="_blank" class="btn-project">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="project-card glass-panel 3d-card stagger-item">
+                            <div class="proj-header">
+                                <i class="fas fa-camera-retro proj-icon"></i>
+                                <h3>Web Galeri Foto</h3>
+                            </div>
+                            <p>Sebuah website untuk menampilkan koleksi foto secara interaktif seperly layaknya platform Pinterest. Dibuat menggunakan framework Laravel sebagai bentuk penyelesaian Ujian Kompentensi Keahlian.</p>
+                            <a href="https://github.com/dimsyyy/Galeri-Foto" target="_blank" class="btn-project">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="project-card glass-panel 3d-card stagger-item">
+                            <div class="proj-header">
+                                <i class="fas fa-wallet proj-icon"></i>
+                                <h3>Catatan Keuangan</h3>
+                            </div>
+                            <p>Aplikasi web untuk mengelola catatan keuangan, ini adalah bentuk yang lebih simpel dari SchediKu App.</p>
+                            <a href="https://github.com/dimsyyy/catatan-keuangan" target="_blank" class="btn-project">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="project-card glass-panel 3d-card stagger-item">
+                            <div class="proj-header">
+                                <i class="fas fa-clapperboard proj-icon"></i>
+                                <h3>UNHEARD</h3>
+                            </div>
+                            <p>Sebuah film yang menceritakan kisah seorang gadis yang tidak pernah didengar. pembuat berkontribusi sebagai Director of Photography (DOP) dan juga Editor.</p>
+                            <a href="https://youtu.be/fcy1OFo3x8o?si=dbwZXJV2vO8qfGFBn" target="_blank" class="btn-project">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="project-card glass-panel 3d-card stagger-item">
+                            <div class="proj-header">
+                                <i class="fas fa-film proj-icon"></i>
+                                <h3>Company Profile</h3>
+                            </div>
+                            <p>Sebuah video profil jurusan Manajemen Informatika Politeknik Negeri Sriwijaya. pembuat berkontribusi sebagai Director of Photography (DOP) dan juga Editor.</p>
+                            <a href="https://youtu.be/hCBD4Tz7tho?si=_rqYAF0P6-KVvAle" target="_blank" class="btn-project">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="project-card glass-panel 3d-card stagger-item">
+                            <div class="proj-header">
+                                <i class="fas fa-music proj-icon"></i>
+                                <h3>Web Lyric</h3>
+                            </div>
+                            <p>Sebuah website untuk menampilkan lirik lagu dengan animasi glitch untuk menguatkan suasana.</p>
+                            <a href="https://dimsyyy.github.io/HargaiAku/" target="_blank" class="btn-project">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="project-card glass-panel 3d-card stagger-item">
+                            <div class="proj-header">
+                                <i class="fas fa-code proj-icon"></i>
+                                <h3>Web Lyric</h3>
+                            </div>
+                            <p>Sebuah website untuk menampilkan lirik lagu dengan animasi glitch untuk menguatkan suasana.</p>
+                            <a href="https://dimsyyy.github.io/HargaiAku/" target="_blank" class="btn-project">Lihat Proyek <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

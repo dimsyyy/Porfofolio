@@ -1,0 +1,18 @@
+[
+  {
+    "date": "2026-09-11",
+    "macrostructure": "Split Studio",
+    "theme": "Midnight",
+    "nav": "N5 Floating pill",
+    "footer": "Ft2 Inline",
+    "enrichment": "existing portrait photography",
+    "brief": "Dark responsive portfolio with skill and project filters"
+  },
+  {
+    "date": "2026-09-11",
+    "macrostructure": "Portfolio Grid",
+    "theme": "Editorial",
+    "enrichment": "existing portrait photography",
+    "brief": "Redesign a personal software-development portfolio with an editorial, work-first structure"
+  }
+]
